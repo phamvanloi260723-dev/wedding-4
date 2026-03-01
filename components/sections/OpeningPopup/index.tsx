@@ -164,7 +164,7 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
                                 className="group relative px-12 py-4 rounded-full overflow-hidden transition-all duration-700"
                             >
                                 {/* Premium Glass background */}
-                                <div className="absolute inset-0 bg-white/5 backdrop-blur-xl border border-white/20 rounded-full group-hover:bg-white/10 transition-colors duration-500" />
+                                <div className="absolute inset-0 bg-white/5 backdrop-blur-xl border border-white/20 rounded-full group-hover:bg-white/30 transition-colors duration-500" />
 
                                 {/* Light sweep effect */}
                                 <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -182,7 +182,7 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
                                 </span>
 
                                 {/* Subtle outer glow on hover */}
-                                <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000 blur-xl bg-white/10 -z-10" />
+                                <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-1000 blur-xl bg-white/50 -z-10" />
                             </motion.button>
                         </motion.div>
 
