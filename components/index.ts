@@ -1,6 +1,7 @@
 // UI Components
 export { default as AnimatedSection } from "./ui/AnimatedSection";
 export { default as SmoothScroll } from "./ui/SmoothScroll";
+export { default as ScrollSection } from "./ui/ScrollSection";
 
 // Feature Components
 export { default as FloatingControls } from "./features/FloatingControls";

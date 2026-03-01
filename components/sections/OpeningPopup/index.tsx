@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
 
 export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
@@ -15,7 +15,7 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
     // Particles/Petals for luxury feel
     const petals = Array.from({ length: 15 });
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -26,7 +26,7 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
         },
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         visible: {
             opacity: 1,
@@ -35,7 +35,7 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
         },
     };
 
-    const nameVariants = {
+    const nameVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: (i: number) => ({
             opacity: 1,
