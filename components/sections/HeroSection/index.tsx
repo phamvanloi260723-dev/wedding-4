@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { FloralCorner } from "@/components";
+import { FloralCorner, PremiumSparkles } from "@/components";
 
 export default function HeroSection() {
   const { groom, bride, images, events } = WEDDING_DATA;
@@ -23,6 +23,7 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30" />
+        <PremiumSparkles className="opacity-30" />
       </motion.div>
 
       {/* Content Overlay */}

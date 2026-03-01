@@ -12,57 +12,90 @@ import {
   ThankYouSection,
   FloatingControls,
   WaveSeparator,
-  FloralDivider
+  FloralDivider,
+  SideFloralBranch,
+  FallingBubbles
 } from "@/components";
 
 export default function WeddingInvitation() {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <main className="page-shell">
-      <div id="opening">
-        {!isOpened && <OpeningPopup onOpen={() => setIsOpened(true)} />}
-      </div>
+    <>
+      {/* Global Visual Effects */}
+      <FallingBubbles count={50} />
 
-      {isOpened && (
-        <>
-          <FloatingControls autoPlay={isOpened} />
+      <main className="page-shell bg-white relative">
+        {/* Side Framing Decorations */}
+        <SideFloralBranch className="hidden lg:block fixed left-4 top-0 bottom-0 w-24 z-[5]" />
+        <SideFloralBranch className="hidden lg:block fixed right-4 top-0 bottom-0 w-24 z-[5]" flip />
 
-          <div id="home" className="relative">
-            <HeroSection />
-            <WaveSeparator className="absolute bottom-0 left-0 w-full h-12 text-background translate-y-[1px]" />
-          </div>
+        <div id="opening">
+          {!isOpened && <OpeningPopup onOpen={() => setIsOpened(true)} />}
+        </div>
 
-          <div id="intro">
-            <InvitationLetter />
-            <FloralDivider className="py-12 text-primary/30" />
-          </div>
+        {isOpened && (
+          <>
+            <FloatingControls autoPlay={isOpened} />
 
-          <div id="couple">
-            <CoupleSection />
-            <FloralDivider className="py-12 text-primary/30" />
-          </div>
+            <div id="home" className="relative">
+              <HeroSection />
+              <WaveSeparator className="absolute bottom-0 left-0 w-full h-16 text-white translate-y-[1px]" height={120} />
+            </div>
 
-          <div id="venue">
-            <VenueSection />
-            <FloralDivider className="py-12 text-primary/30" />
-          </div>
+            <div id="intro" className="relative">
+              <InvitationLetter />
+              <WaveSeparator
+                className="absolute bottom-0 left-0 w-full h-16 text-secondary translate-y-[1px]"
+                color="var(--color-secondary)"
+                height={120}
+              />
+              <FloralDivider className="py-6 text-primary/30" />
+            </div>
 
-          <div id="gallery">
-            <GallerySection />
-            <FloralDivider className="py-12 text-primary/30" />
-          </div>
+            <div id="couple" className="relative bg-secondary">
+              <CoupleSection />
+              <WaveSeparator
+                className="absolute bottom-0 left-0 w-full h-16 text-white translate-y-[1px]"
+                color="white"
+                height={120}
+              />
+              <FloralDivider className="py-6 text-primary/30" />
+            </div>
 
-          <div id="blessing">
-            <BlessingSection />
-            <FloralDivider className="py-12 text-primary/30" />
-          </div>
+            <div id="venue" className="relative">
+              <VenueSection />
+              <WaveSeparator
+                className="absolute bottom-0 left-0 w-full h-16 text-white translate-y-[1px]"
+                color="white"
+                height={120}
+              />
+              <FloralDivider className="py-6 text-primary/30" />
+            </div>
 
-          <div id="thankyou">
-            <ThankYouSection />
-          </div>
-        </>
-      )}
-    </main>
+            <div id="gallery" className="relative">
+              <GallerySection />
+              <WaveSeparator
+                className="absolute bottom-0 left-0 w-full h-16 text-white translate-y-[1px]"
+                color="white"
+                height={120}
+              />
+              <FloralDivider className="py-6 text-primary/30" />
+            </div>
+
+            <div id="blessing" className="relative">
+              <BlessingSection />
+              <FloralDivider className="py-6 text-primary/30" />
+            </div>
+
+            <div id="thankyou">
+              <ThankYouSection />
+            </div>
+          </>
+        )}
+      </main>
+      );
+    </>
   );
 }
+

@@ -28,7 +28,7 @@ export default function VenueSection() {
     ];
 
     return (
-        <section className="bg-white py-24 relative overflow-hidden">
+        <section className="bg-white py-12 relative overflow-hidden">
             {/* Decorative Florals */}
             <FloralCorner className="absolute top-0 right-0 w-64 h-64 text-primary/5 translate-x-12 -translate-y-12 rotate-90" />
             <FloralCorner className="absolute bottom-0 left-0 w-64 h-64 -translate-x-12 translate-y-12 -rotate-90" />

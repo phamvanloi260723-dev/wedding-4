@@ -139,7 +139,7 @@ export default function BlessingSection() {
     const { thankyou } = content;
 
     return (
-        <section className="bg-white py-20 pb-28 relative overflow-hidden">
+        <section className="bg-white py-12 pb-16 relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}

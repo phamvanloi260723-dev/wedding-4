@@ -2,19 +2,21 @@
 
 import { motion } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { FloatingPetals } from "@/components";
 
 export default function InvitationLetter() {
     const { intro } = WEDDING_DATA.content;
 
     return (
-        <section id="intro" className="section py-16 md:py-24 bg-white relative overflow-hidden">
+        <section id="intro" className="section py-10 md:py-16 bg-white relative overflow-hidden">
+            <FloatingPetals count={8} className="opacity-40" />
             <div className="section-inner max-w-3xl relative z-10 px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.2 }}
-                    className="relative bg-white p-10 md:p-20 rounded-[35px] md:rounded-[60px] shadow-sm border border-primary/5"
+                    className="relative bg-white p-8 md:p-14 rounded-[35px] md:rounded-[60px] shadow-sm border border-primary/5"
                 >
                     {/* Ornate Frame (Background Layer) */}
                     <div className="absolute inset-0 pointer-events-none z-0 opacity-25">

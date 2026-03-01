@@ -12,7 +12,7 @@ export default function CoupleSection() {
     return (
         <section
             id="couple"
-            className="bg-white py-24 relative overflow-hidden"
+            className="bg-white py-12 relative overflow-hidden"
         >
             {/* Decorative Florals */}
             <FloralCorner className="absolute top-0 left-0 w-64 h-64 text-primary/5 -translate-x-12 -translate-y-12" />

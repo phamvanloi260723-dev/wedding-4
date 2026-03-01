@@ -5,7 +5,7 @@ import { WEDDING_DATA } from "@/data/wedding-data";
 
 export default function ThankYouSection() {
     return (
-        <section id="thank-you" className="section min-h-screen flex items-center justify-center bg-background py-20 relative overflow-hidden">
+        <section id="thank-you" className="section min-h-screen flex items-center justify-center bg-background py-10 relative overflow-hidden">
             {/* Artistic Background Text */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
                 <span className="text-[20vw] font-script text-primary/5 whitespace-nowrap leading-none">
@@ -14,7 +14,7 @@ export default function ThankYouSection() {
             </div>
 
             <div className="section-inner max-w-4xl relative z-10">
-                <div className="ornate-border rounded-[60px] bg-white p-12 md:p-20 shadow-xl relative text-center">
+                <div className="ornate-border rounded-[60px] bg-white p-10 md:p-16 shadow-xl relative text-center">
                     {/* Restored Ornate Frame */}
                     <div className="absolute inset-0 pointer-events-none opacity-20">
                         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">

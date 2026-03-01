@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
-import { FloralCorner } from "@/components";
+import { FloralCorner, PremiumSparkles } from "@/components";
 
 export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
     const [isVisible, setIsVisible] = useState(true);
@@ -74,6 +74,9 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
                         </motion.div>
                         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
+
+                        {/* Premium Sparkles */}
+                        <PremiumSparkles className="opacity-40" />
 
                         {/* Elegant Desktop Frame */}
                         <div className="hidden lg:block absolute inset-12 border border-white/15 pointer-events-none z-10" />
