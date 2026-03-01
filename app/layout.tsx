@@ -13,10 +13,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Thiệp Cưới Nguyễn Anh ❤️ Lê Hòa",
+  title: "Nguyễn Anh ❤️ Lê Hòa - Thiệp Cưới",
   description: "Trân trọng kính mời quý vị đến dự lễ cưới của chúng tôi.",
   openGraph: {
-    title: "Thiệp Cưới Nguyễn Anh ❤️ Lê Hòa",
+    title: "Nguyễn Anh ❤️ Lê Hòa - Thiệp Cưới",
     description: "Trân trọng kính mời quý vị đến dự lễ cưới của chúng tôi.",
     type: "website",
   },
