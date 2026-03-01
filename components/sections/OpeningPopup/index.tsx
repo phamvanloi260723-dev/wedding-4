@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { FloralCorner } from "@/components";
 
 export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
     const [isVisible, setIsVisible] = useState(true);
@@ -77,6 +78,10 @@ export default function OpeningPopup({ onOpen }: { onOpen: () => void }) {
                         {/* Elegant Desktop Frame */}
                         <div className="hidden lg:block absolute inset-12 border border-white/15 pointer-events-none z-10" />
                         <div className="hidden lg:block absolute inset-16 border border-white/5 pointer-events-none z-10" />
+
+                        {/* Floral Decorations */}
+                        <FloralCorner className="absolute top-0 left-0 w-64 h-64 -translate-x-12 -translate-y-12 text-white/20 rotate-0" />
+                        <FloralCorner className="absolute bottom-0 right-0 w-64 h-64 translate-x-12 translate-y-12 text-white/20 rotate-180" />
                     </div>
 
                     {/* Floating Luxury Particles */}

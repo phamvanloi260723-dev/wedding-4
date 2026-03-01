@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { FloralCorner } from "@/components";
 
 export default function HeroSection() {
   const { groom, bride, images, events } = WEDDING_DATA;
@@ -26,6 +27,10 @@ export default function HeroSection() {
 
       {/* Content Overlay */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-6">
+        {/* Decorative Florals */}
+        <FloralCorner className="absolute top-0 left-0 w-48 h-48 text-white/10 -translate-x-8 -translate-y-8" />
+        <FloralCorner className="absolute bottom-0 right-0 w-48 h-48 text-white/10 translate-x-8 translate-y-8 rotate-180" />
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -10,7 +10,9 @@ import {
   GallerySection,
   BlessingSection,
   ThankYouSection,
-  FloatingControls
+  FloatingControls,
+  WaveSeparator,
+  FloralDivider
 } from "@/components";
 
 export default function WeddingInvitation() {
@@ -26,28 +28,34 @@ export default function WeddingInvitation() {
         <>
           <FloatingControls autoPlay={isOpened} />
 
-          <div id="home">
+          <div id="home" className="relative">
             <HeroSection />
+            <WaveSeparator className="absolute bottom-0 left-0 w-full h-12 text-background translate-y-[1px]" />
           </div>
 
           <div id="intro">
             <InvitationLetter />
+            <FloralDivider className="py-12 text-primary/30" />
           </div>
 
           <div id="couple">
             <CoupleSection />
+            <FloralDivider className="py-12 text-primary/30" />
           </div>
 
           <div id="venue">
             <VenueSection />
+            <FloralDivider className="py-12 text-primary/30" />
           </div>
 
           <div id="gallery">
             <GallerySection />
+            <FloralDivider className="py-12 text-primary/30" />
           </div>
 
           <div id="blessing">
             <BlessingSection />
+            <FloralDivider className="py-12 text-primary/30" />
           </div>
 
           <div id="thankyou">

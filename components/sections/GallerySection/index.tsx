@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { FloralCorner, FloralDivider } from "@/components";
 
 // Using a list of images with orientation.
 // Pattern: V, V, H, V, V, H... for variety
@@ -59,14 +60,18 @@ export default function GallerySection() {
   if (!galleryImages || galleryImages.length === 0) return null;
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-white relative overflow-hidden">
+      {/* Decorative Florals */}
+      <FloralCorner className="absolute top-0 left-0 w-64 h-64 text-primary/5 -translate-x-12 -translate-y-12" />
+      <FloralCorner className="absolute bottom-0 right-0 w-64 h-64 translate-x-12 translate-y-12 rotate-180" />
+
       <div className="section-inner">
         <div className="text-center mb-12">
           <p className="eyebrow mb-2">{WEDDING_DATA.content.gallery.eyebrow}</p>
           <h2 className="text-3xl font-title text-primary tracking-widest uppercase">
             {WEDDING_DATA.content.gallery.title}
           </h2>
-          <div className="section-divider" />
+          <FloralDivider className="mt-6 text-primary/20" />
         </div>
 
         {/* 2-column grid */}

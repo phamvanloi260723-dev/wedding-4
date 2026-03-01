@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { WEDDING_DATA } from "@/data/wedding-data";
+import { FloralCorner } from "@/components";
 
 export default function CoupleSection() {
     const { groom, bride, content } = WEDDING_DATA;
@@ -13,6 +14,10 @@ export default function CoupleSection() {
             id="couple"
             className="bg-white py-24 relative overflow-hidden"
         >
+            {/* Decorative Florals */}
+            <FloralCorner className="absolute top-0 left-0 w-64 h-64 text-primary/5 -translate-x-12 -translate-y-12" />
+            <FloralCorner className="absolute bottom-0 right-0 w-64 h-64 text-primary/5 translate-x-12 translate-y-12 rotate-180" />
+
             <div className="max-w-6xl mx-auto px-6">
 
                 {/* Title */}
