@@ -18,7 +18,7 @@ export const WEDDING_DATA = {
     },
   },
   bride: {
-    name: "Lê Thị Hòa",
+    name: "Nguyễn Thị Hòa",
     phone: "090-987-6543",
     account: {
       bank: "Techcombank",
@@ -49,8 +49,8 @@ export const WEDDING_DATA = {
     },
     wedding: {
       title: "Lễ Thành Hôn",
-      date: "2026-12-25T11:00:00",
-      location: "Nhà hàng Luxury Palace",
+      date: "2026-12-24T11:00:00",
+      // location: "Nhà hàng Luxury Palace",
       address: "Số 456, Đường XYZ, Quận 3, TP. HCM",
       addressGroom: "Số 456, Đường XYZ, Quận 3, TP. HCM",
       addressBride: "Nhà Gái: 123 Lê Lợi, Quận 1",

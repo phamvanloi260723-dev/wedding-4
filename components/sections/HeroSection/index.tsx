@@ -53,9 +53,9 @@ export default function HeroSection() {
             <p className="text-lg md:text-xl uppercase">
               {weddingDate.toLocaleDateString('vi-VN', { day: 'numeric', month: 'long', year: 'numeric' })}
             </p>
-            <p className="text-sm opacity-80 italic">
+            {/* <p className="text-sm opacity-80 italic">
               Tại {events.wedding.location}
-            </p>
+            </p> */}
           </div>
         </motion.div>
 

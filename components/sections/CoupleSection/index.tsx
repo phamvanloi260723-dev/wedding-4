@@ -48,7 +48,7 @@ export default function CoupleSection() {
                             </div>
                         </div>
 
-                        <h3 className="text-3xl md:text-4xl font-heading text-primary uppercase tracking-widest mb-4">
+                        <h3 className="text-3xl md:text-4xl  font-heading text-primary uppercase tracking-widest mb-4">
                             {groom.name}
                         </h3>
 
